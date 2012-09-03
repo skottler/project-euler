@@ -39,3 +39,5 @@ public class projecteuler2 {
         }
     }
 }
+
+// Result: 4613732
