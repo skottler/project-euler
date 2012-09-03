@@ -35,4 +35,4 @@ public class projecteuler3 {
 
 }
 
-// Solution: 600851475143
+// Solution: 6857
