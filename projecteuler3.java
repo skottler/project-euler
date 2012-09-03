@@ -1,5 +1,3 @@
-
-
 public class projecteuler3 {
 
     public static void main(String[] args) {
@@ -18,7 +16,7 @@ public class projecteuler3 {
 
     private static long min_factor(long to_factor) {
         for (long i = 2, end = squareroot(to_factor); i <= end; i++) {
-            if (to_factor % 2 == 0)
+            if (to_factor % i == 0)
                 return i;
         }
         return to_factor;
