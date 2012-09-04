@@ -20,6 +20,7 @@ public class projecteuler2 {
                 break;
             }
 
+            // If the number is divisble by 2, add it to the total.
             if (current_number % 2 == 0) {
                 total += current_number;
             }
@@ -31,6 +32,7 @@ public class projecteuler2 {
 
 
     private static int fib_it(int to_be_fibbed) {
+        // Ensure the to_be_fibbed variable matches our range.
         if (to_be_fibbed < 0 || to_be_fibbed > 46) {
             return(1);
         }
@@ -44,6 +46,7 @@ public class projecteuler2 {
                 integer2 = integer3;
             }
 
+            // Return the int value.
             return integer1;
         }
     }
