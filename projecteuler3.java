@@ -24,13 +24,13 @@ public class projecteuler3 {
 
 
     private static long squareroot(long to_factor) {
-        long a = 0;
+        long value = 0;
         for (long i = 1L << 31; i != 0; i >>>= 1) {
-            a |= i;
-            if (a > 3037000499L || a * a > to_factor)
-                a ^= i;
+            value |= i;
+            if (value > 3037000499L || value * value > to_factor)
+                value ^= i;
         }
-        return a;
+        return value;
     }
 
 }

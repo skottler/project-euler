@@ -1,7 +1,15 @@
 import java.lang.System;
 
+/**
+ * Setup the class
+ */
 public class projecteuler2 {
 
+    /*
+     * Main
+     *
+     * This is where validation of range takes place.
+     */
     public static void main(String[] args) {
         int total = 0;
         for (int i = 0; ; i++) {
@@ -17,6 +25,7 @@ public class projecteuler2 {
             }
         }
 
+        // Print the total integer value to stdout.
         System.out.println(total);
     }
 
@@ -27,15 +36,15 @@ public class projecteuler2 {
         }
         else {
             // Setup some initial variables to be used for the "fibatization"
-            int x = 0;
-            int y = 1;
+            int integer1 = 0;
+            int integer2 = 1;
             for (int i = 0; i < to_be_fibbed; i++) {
-                int z = x + y;
-                x = y;
-                y = z;
+                int integer3 = integer1 + integer2;
+                integer1 = integer2;
+                integer2 = integer3;
             }
 
-            return x;
+            return integer1;
         }
     }
 }
